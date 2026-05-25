@@ -3,7 +3,8 @@ class ServicoDePagamento {
     this.pagamentos = [];
   }
 
-  pagar(codigoBarras, empresa, valor) {
+  pagar(codigoBarras, valor) {
+    const empresa = 'Nike';
     const categoria = valor > 100.00 ? 'cara' : 'padrão';
 
     const pagamento = {
